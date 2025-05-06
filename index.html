@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0xBet | ДаркСтавки</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c2c2c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      color: #9a00ff;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #9a00ff;
+    }
+    form {
+      margin-bottom: 30px;
+      background-color: #2b2b2b;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #1a1a1a;
+      color: white;
+      border: 1px solid #555;
+      border-radius: 4px;
+    }
+    input[type="file"] {
+      background-color: transparent;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #9a00ff;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 10px;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .admin {
+      margin-top: 40px;
+      border-top: 1px dashed #9a00ff;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>0xBet</h1>
+    <p>Твоя ставка — твоя тень</p>
+  </header>
+  <section>
+    <h2>Сделать ставку</h2>
+    <form enctype="multipart/form-data">
+      <label>Сумма ставки:</label>
+      <input type="text" name="sum">
+      <label>На кого/что ставите:</label>
+      <input type="text" name="target">
+      <label>Скрин оплаты:</label>
+      <input type="file" name="screenshot">
+      <label>ФИО:</label>
+      <input type="text" name="fullname">
+      <button type="submit">Отправить ставку</button>
+    </form><h2>Заявка на выплату</h2>
+<form>
+  <label>Сумма ставки:</label>
+  <input type="text" name="sum">
+  <label>Коэффициент:</label>
+  <input type="text" name="coef">
+  <label>Событие:</label>
+  <input type="text" name="event">
+  <label>Реквизиты (ник в Discord):</label>
+  <input type="text" name="dsnick">
+  <button type="submit">Запросить выплату</button>
+</form>
+
+<div class="admin">
+  <h2>Панель админа</h2>
+  <p style="color:#aaa">* Здесь появятся все заявки, матчи и секретный раздел для хакеров</p>
+  <button onclick="alert('Панель ещё в разработке — скоро тут будет даркмагия!')">Открыть</button>
+</div>
+
+  </section>
+  <footer>
+    &copy; 0xBet | 2025 | Бет в тенях
+  </footer>
+</body>
+</html>
